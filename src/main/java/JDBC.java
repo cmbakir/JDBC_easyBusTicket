@@ -1,0 +1,27 @@
+public class JDBC {
+
+    /*
+
+
+    NOT : JDBC TESTI YAPMANIZ ISTENIYORSA, YAPMANIZ GEREKEN ILK IS
+DATABASE YONETICISI ILE ILETISIME GECEREK, ILGILI DATABASE GIRIS BILGILERINI
+(ACCESS INFORMATION) ALMALIYIZ
+
+URL: jdbc:mysql://195.35.59.63
+
+
+
+     */
+
+    public static void main(String[] args) {
+
+
+
+
+
+
+
+    }
+
+
+}

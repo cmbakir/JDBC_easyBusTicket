@@ -17,7 +17,10 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="6c1f6968-9377-41f3-aafc-5044725db797">
-      <console name="qa.easyBusTicket" type="STANDARD" schema="" session="Main"><![CDATA[SELECT * FROM users;]]></console>
+      <console name="qa.easyBusTicket" type="STANDARD" schema="u201212290_qaeasy" session="Main"><![CDATA[SELECT * FROM users;
+
+
+SELECT firstname]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -25,11 +28,21 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
+      <object connection-id="6c1f6968-9377-41f3-aafc-5044725db797" object-ref="schemas/u201212290_qaeasy/tables/users" />
       <object connection-id="6c1f6968-9377-41f3-aafc-5044725db797" object-ref="consoles/qa.easyBusTicket" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="6c1f6968-9377-41f3-aafc-5044725db797" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="6c1f6968-9377-41f3-aafc-5044725db797" dataset="u201212290_qaeasy.users" active-filter-id="3097c6de-b1c2-41e7-9173-4a8cd867587f">
+      <filter id="3097c6de-b1c2-41e7-9173-4a8cd867587f" name="CemBakir" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="301" active="true" />
+        <condition column="firstname" operator="=" value="cem" active="true" />
+        <condition column="lastname" operator="=" value="bakir" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

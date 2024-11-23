@@ -50,3 +50,23 @@ public class QueryManage {
         return DeleteDogrulama;
     }
 }
+
+/*
+Mülakatta felan
+OOP konsepti biliyor musun derlerse
+
+Ben Query’lerimi saklamak istedim. Enkapsule edip “getter” lar vasıtasıyla StepDefifinition da bunları kullandım
+
+
+
+Query ler icin Query Manage class oluşturdum.
+
+Data base den select yapacak
+Private Query ler oluşturdum.
+
+(private String QUERY03 = "SELECT firstname, lastname FROM users WHERE email = 'muratdonmezdemir.user@easybus.com’;”;)
+
+ve bu oluşturduğum Query leri public “Getter” ile Enkapsule edip kullanmis oldum.
+
+(okuyabildiler fakat degistiremediler)
+ */

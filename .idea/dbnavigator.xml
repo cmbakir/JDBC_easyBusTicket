@@ -19,8 +19,29 @@
     <connection id="6c1f6968-9377-41f3-aafc-5044725db797">
       <console name="qa.easyBusTicket" type="STANDARD" schema="u201212290_qaeasy" session="Main"><![CDATA[SELECT * FROM users;
 
+-- User tablosundaki tüm kullanıcıların adlarını ve e-posta adreslerini listelemek istiyorum
 
-SELECT firstname]]></console>
+SELECT firstname, email FROM users;
+
+SELECT firstname, lastname, email FROM users WHERE country_code = 'TR';
+
+-- muratdonmezdemir.user@easybus.com
+
+SELECT firstname, lastname FROM users WHERE email = 'muratdonmezdemir.user@easybus.com';
+
+INSERT INTO users (id, firstname, lastname,username,email, password)VALUES (378,'john', 'doe', 'johndoe','jdoe@gmail.com','12345');
+
+INSERT INTO users (id, firstname, lastname,username,email, password)VALUES (?,?,?,?,?,?);
+
+SELECT * FROM users WHERE id = 400;
+
+UPDATE users SET email = 'yeniemail@gmail.com' WHERE id = 400;
+
+SELECT email FROM users WHERE id = 400;
+
+DELETE FROM users WHERE email = 'yeniemail@gmail.com';
+
+SELECT * FROM users WHERE email = 'yeniemail@gmail.com';]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -28,7 +49,6 @@ SELECT firstname]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="6c1f6968-9377-41f3-aafc-5044725db797" object-ref="schemas/u201212290_qaeasy/tables/users" />
       <object connection-id="6c1f6968-9377-41f3-aafc-5044725db797" object-ref="consoles/qa.easyBusTicket" />
     </open-files>
   </component>
